@@ -1,0 +1,8 @@
+[MASTER] 20:17:54.151 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.implementation.EqualsMethod: null
+[MASTER] 20:17:54.166 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.implementation.HashCodeMethod: Could not initialize class net.bytebuddy.description.type.TypeDescription$ForLoadedType
+[MASTER] 20:17:54.176 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.build.HashCodeAndEqualsPlugin: Could not initialize class net.bytebuddy.description.type.TypeDescription$ForLoadedType
+[MASTER] 20:17:54.515 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.build.HashCodeAndEqualsPlugin: null
+[MASTER] 20:17:54.550 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.description.type.TypeDefinition$Sort: null
+[MASTER] 20:17:54.553 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.implementation.EqualsMethod: Could not initialize class net.bytebuddy.description.type.TypeDescription$ForLoadedType
+[MASTER] 20:17:54.554 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.description.type.TypeDescription$ForLoadedType: Could not initialize class net.bytebuddy.description.type.TypeDescription$ForLoadedType
+[MASTER] 20:17:54.932 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.implementation.HashCodeMethod: null
