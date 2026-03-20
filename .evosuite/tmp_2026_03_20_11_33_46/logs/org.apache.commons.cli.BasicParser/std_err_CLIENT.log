@@ -1,0 +1,1 @@
+[MASTER] 12:10:55.444 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.util.function.BiFunction<T, U, R> : Type points to itself

@@ -1,3 +1,0 @@
-[MASTER] 20:46:44.216 [pool-2-thread-1] ERROR ClientNodeImpl - Error when generating tests for: org.apache.commons.cli.AlreadySelectedException with seed 1773967559171. Configuration id : default
-java.lang.OutOfMemoryError: GC overhead limit exceeded
-[MASTER] 21:01:47.126 [Thread-2] ERROR SpawnProcessKeepAliveChecker - Failed to receive keep alive message. Going to shutdown the process.

@@ -1,0 +1,154 @@
+/*
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ */
+
+
+package org.apache.commons.cli.help;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Set;
+import java.util.Stack;
+import java.util.Vector;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.example.WeirdOptionFormat;
+import org.apache.commons.cli.help.TableDefinition;
+import org.apache.commons.cli.help.TextStyle;
+import org.evosuite.runtime.EvoRunner;
+import org.evosuite.runtime.EvoRunnerParameters;
+import org.junit.runner.RunWith;
+
+@RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, separateClassLoader = true, useJEE = true) 
+public class TableDefinition_ESTest extends TableDefinition_ESTest_scaffolding {
+
+  @Test(timeout = 4000)
+  public void test00()  throws Throwable  {
+      Vector<TextStyle> vector0 = new Vector<TextStyle>();
+      Stack<Locale.LanguageRange> stack0 = new Stack<Locale.LanguageRange>();
+      LinkedHashSet<String> linkedHashSet0 = new LinkedHashSet<String>();
+      List<String> list0 = Locale.filterTags((List<Locale.LanguageRange>) stack0, (Collection<String>) linkedHashSet0);
+      TableDefinition tableDefinition0 = TableDefinition.from((String) null, vector0, list0, (Iterable<List<String>>) null);
+      Iterable<List<String>> iterable0 = tableDefinition0.rows();
+      assertNull(iterable0);
+  }
+
+  @Test(timeout = 4000)
+  public void test01()  throws Throwable  {
+      Stack<TextStyle> stack0 = new Stack<TextStyle>();
+      ArrayDeque<List<String>> arrayDeque0 = new ArrayDeque<List<String>>();
+      TableDefinition tableDefinition0 = TableDefinition.from("TX", stack0, (List<String>) null, arrayDeque0);
+      List<String> list0 = tableDefinition0.headers();
+      assertNull(list0);
+  }
+
+  @Test(timeout = 4000)
+  public void test02()  throws Throwable  {
+      LinkedList<TextStyle> linkedList0 = new LinkedList<TextStyle>();
+      Vector<String> vector0 = new Vector<String>();
+      vector0.add(" >uB3t1");
+      LinkedHashSet<List<String>> linkedHashSet0 = new LinkedHashSet<List<String>>();
+      TableDefinition tableDefinition0 = TableDefinition.from("org.apache.commons.cli.help.TableDefinition$1", linkedList0, vector0, linkedHashSet0);
+      List<String> list0 = tableDefinition0.headers();
+      assertTrue(list0.contains(" >uB3t1"));
+  }
+
+  @Test(timeout = 4000)
+  public void test03()  throws Throwable  {
+      Stack<Locale.LanguageRange> stack0 = new Stack<Locale.LanguageRange>();
+      Locale locale0 = Locale.GERMANY;
+      Set<String> set0 = locale0.getUnicodeLocaleKeys();
+      List<String> list0 = Locale.filterTags((List<Locale.LanguageRange>) stack0, (Collection<String>) set0);
+      ArrayDeque<List<String>> arrayDeque0 = new ArrayDeque<List<String>>((-1));
+      TableDefinition tableDefinition0 = TableDefinition.from("^VoC][&V'dtC}4 vp", (List<TextStyle>) null, list0, arrayDeque0);
+      List<TextStyle> list1 = tableDefinition0.columnTextStyles();
+      assertNull(list1);
+  }
+
+  @Test(timeout = 4000)
+  public void test04()  throws Throwable  {
+      WeirdOptionFormat weirdOptionFormat0 = new WeirdOptionFormat();
+      ArrayList<Option> arrayList0 = new ArrayList<Option>(0);
+      TableDefinition tableDefinition0 = weirdOptionFormat0.apply((Iterable<Option>) arrayList0);
+      List<TextStyle> list0 = tableDefinition0.columnTextStyles();
+      assertEquals(8, list0.size());
+  }
+
+  @Test(timeout = 4000)
+  public void test05()  throws Throwable  {
+      ArrayList<TextStyle> arrayList0 = new ArrayList<TextStyle>();
+      ArrayList<String> arrayList1 = new ArrayList<String>();
+      ArrayDeque<List<String>> arrayDeque0 = new ArrayDeque<List<String>>(0);
+      TableDefinition tableDefinition0 = TableDefinition.from((String) null, arrayList0, arrayList1, arrayDeque0);
+      String string0 = tableDefinition0.caption();
+      assertNull(string0);
+  }
+
+  @Test(timeout = 4000)
+  public void test06()  throws Throwable  {
+      WeirdOptionFormat weirdOptionFormat0 = new WeirdOptionFormat();
+      ArrayDeque<Option> arrayDeque0 = new ArrayDeque<Option>();
+      TableDefinition tableDefinition0 = weirdOptionFormat0.apply((Iterable<Option>) arrayDeque0);
+      String string0 = tableDefinition0.caption();
+      assertEquals("", string0);
+  }
+
+  @Test(timeout = 4000)
+  public void test07()  throws Throwable  {
+      Stack<TextStyle> stack0 = new Stack<TextStyle>();
+      ArrayList<String> arrayList0 = new ArrayList<String>();
+      LinkedList<List<String>> linkedList0 = new LinkedList<List<String>>();
+      TableDefinition tableDefinition0 = TableDefinition.from("Bad URL key format [%s]; expected format is DocumentPath:Key.", stack0, arrayList0, linkedList0);
+      Iterable<List<String>> iterable0 = tableDefinition0.rows();
+      assertNotNull(iterable0);
+  }
+
+  @Test(timeout = 4000)
+  public void test08()  throws Throwable  {
+      Stack<TextStyle> stack0 = new Stack<TextStyle>();
+      ArrayList<String> arrayList0 = new ArrayList<String>();
+      LinkedList<List<String>> linkedList0 = new LinkedList<List<String>>();
+      TableDefinition tableDefinition0 = TableDefinition.from("Bad URL key format [%s]; expected format is DocumentPath:Key.", stack0, arrayList0, linkedList0);
+      String string0 = tableDefinition0.caption();
+      assertEquals("Bad URL key format [%s]; expected format is DocumentPath:Key.", string0);
+  }
+
+  @Test(timeout = 4000)
+  public void test09()  throws Throwable  {
+      Stack<TextStyle> stack0 = new Stack<TextStyle>();
+      ArrayList<String> arrayList0 = new ArrayList<String>();
+      LinkedList<List<String>> linkedList0 = new LinkedList<List<String>>();
+      TableDefinition tableDefinition0 = TableDefinition.from("Bad URL key format [%s]; expected format is DocumentPath:Key.", stack0, arrayList0, linkedList0);
+      List<String> list0 = tableDefinition0.headers();
+      assertEquals(0, list0.size());
+  }
+
+  @Test(timeout = 4000)
+  public void test10()  throws Throwable  {
+      Stack<TextStyle> stack0 = new Stack<TextStyle>();
+      ArrayList<String> arrayList0 = new ArrayList<String>();
+      LinkedList<List<String>> linkedList0 = new LinkedList<List<String>>();
+      TableDefinition tableDefinition0 = TableDefinition.from("Bad URL key format [%s]; expected format is DocumentPath:Key.", stack0, arrayList0, linkedList0);
+      List<TextStyle> list0 = tableDefinition0.columnTextStyles();
+      assertEquals(0, list0.size());
+  }
+}
