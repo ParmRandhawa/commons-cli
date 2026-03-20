@@ -83,24 +83,6 @@
       <version>${commons.mockito.version}</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.jacoco</groupId>
-      <artifactId>jacoco-maven-plugin</artifactId>
-      <version>0.8.14</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.evosuite</groupId>
-      <artifactId>evosuite-standalone-runtime</artifactId>
-      <version>1.0.6</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   <properties>
     <!-- project.build.outputTimestamp is managed by Maven plugins, see https://maven.apache.org/guides/mini/guide-reproducible-builds.html -->
@@ -143,16 +125,7 @@
             <enableRulesSummary>false</enableRulesSummary>
             <includeTestSourceDirectory>true</includeTestSourceDirectory>
           </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.evosuite.plugins</groupId>
-          <artifactId>evosuite-maven-plugin</artifactId>
-          <version>${evosuiteVersion}</version>
-          <executions><execution>
-            <goals> <goal> prepare </goal> </goals>
-            <phase> process-test-classes </phase>
-          </execution></executions>
-        </plugin>
+        </plugin>      
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
@@ -222,11 +195,6 @@
       <plugin>
         <groupId>com.github.siom79.japicmp</groupId>
         <artifactId>japicmp-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.pitest</groupId>
-        <artifactId>pitest-maven</artifactId>
-        <version>LATEST</version>
       </plugin>
     </plugins>
   </reporting>
